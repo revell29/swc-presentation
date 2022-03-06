@@ -1,0 +1,217 @@
+import { Component, useState } from "react";
+import { Head, Notes, themes, Footer, Steps, Split } from "mdx-deck";
+import { Box } from "theme-ui";
+
+import Image01 from "./images/image1.png";
+import Image02 from "./images/image2.png";
+import JbPos from "./images/jb-pos.png";
+import Swc from "./images/swc-vs.jpeg";
+
+<Head>
+  <title>Jubelio Sharing Session - SWC vs Babel</title>
+</Head>
+
+<Footer>
+  <footer
+    style={{
+      position: "fixed",
+      bottom: 0,
+      left: 0,
+      right: 0,
+      padding: "0.79rem",
+      width: "100vw",
+      backgroundColor: "#F9B100",
+      color: "#202E3E",
+    }}
+  >
+    Jubelio Sharing Session - SWC vs Babel
+  </footer>
+</Footer>
+
+# SWC vs Babel
+
+## A comparison of Babel and SWC
+
+>
+
+>
+
+<code>(Press spacebar to continue)</code>
+
+---
+
+# What this talk is
+
+- ✅ What is SWC?
+- ✅ What is Babel?
+- ✅ Why SWC so faster more than Babel?
+- ✅ Comparison of Babel and SWC
+- ✅ Feature of SWC
+
+---
+
+# What is SWC?
+
+---
+
+# Who is using SWC
+
+import Image1 from "./components/Image";
+
+<Image1 />
+
+>
+
+>
+
+<code>And many more</code>
+
+---
+
+# SWC on Nextjs v12
+
+---
+
+<img src={Image01} />
+
+---
+
+<img
+  src="https://nextjs.org/_next/image?url=%2Fstatic%2Fblog%2Fnext-12%2Fswc.png&w=1920&q=75"
+  height="150px"
+  width="120px"
+/>
+
+---
+
+# What is Babel?
+
+---
+
+# How babel works?
+
+import ImageBabel from "./components/ImageBabel";
+
+<ImageBabel />
+
+---
+
+# What is behind the SWC?
+
+---
+
+# RUST behind the SWC
+
+---
+
+import Discord from "./components/Discord";
+
+<Discord />
+
+>
+
+<code> — Discord</code>
+
+---
+
+# Why SWC so faster more than Babel?
+
+---
+
+<p>
+  JavaScript is single-threaded and it would be impossible to run heavy
+  <br />
+  computations in an asynchronous way in a real-life application.
+</p>
+
+---
+
+# Comparison with Single Core CPU
+
+import Compare1 from "./components/Compare1";
+
+<Compare1 />
+
+---
+
+# Comparison with <code>`Promise.all()`</code>
+
+## 8 cores CPU and asynchronous
+
+---
+
+## The first experiment ran with 4 promises:
+
+import Compare2 from "./components/Compare2";
+
+<Compare2 />
+
+---
+
+## The second experiment ran with 100 promises:
+
+import Compare3 from "./components/Compare3";
+
+<Compare3 />
+
+---
+
+# SWC On real world application
+
+import ImageCp from "./components/ImageCp";
+
+<ImageCp image={JbPos} />
+
+---
+
+<Split>
+  <div>
+    <img
+      style={{
+        height: "auto",
+        objectFit: "cover",
+      }}
+      src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fa04e72e-ff88-4b47-acb4-7d7656d4dcbf/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220306%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220306T225914Z&X-Amz-Expires=86400&X-Amz-Signature=df731b69a6a099f934bcc2aecbf5141a612a11e545b62670ad9017c688bc3c0b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject"
+    />
+    # Build without SWC - (62,49s)
+  </div>
+  <div>
+    <img
+      style={{
+        height: "auto",
+        objectFit: "cover",
+      }}
+      src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f85dd705-da8f-4f6c-b581-0fd1260e0247/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220306%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220306T230045Z&X-Amz-Expires=86400&X-Amz-Signature=37ae2d2f8819663490680dcce1ec36e73302e94246d584cf21d13aa83d5da45e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject"
+    />
+    # Build with SWC - (28,40s)
+  </div>
+</Split>
+
+---
+
+# Conclusion
+
+## ⚡ SWC is faster than Babel
+
+---
+
+# Knowing what you don't know is as important as knowing things
+
+---
+
+# Thank you!
+
+<Box color="white">
+  <p
+    style={{
+      color: "white",
+    }}
+  >
+    <a href="https://twitter.com/apsyadiraa" color>
+      https://twitter.com/apsyadiraa
+    </a>
+  </p>
+  <p>
+    <a href="https://github.com/revell29">https://github.com/revell29</a>
+  </p>
+</Box>
