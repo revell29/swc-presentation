@@ -7,6 +7,15 @@ import Image02 from "./images/image2.png";
 import JbPos from "./images/jb-pos.png";
 import Swc from "./images/swc-vs.jpeg";
 
+export const theme = {
+  ...themes.dark,
+  colors: {
+    ...themes.dark.colors,
+    primary: "#F9B100",
+    background: "#111111",
+  },
+};
+
 <Head>
   <title>Jubelio Sharing Session - SWC vs Babel</title>
 </Head>
@@ -189,6 +198,28 @@ import ImageCp from "./components/ImageCp";
 
 ---
 
+# Features of SWC
+
+<Steps>
+
+- Compilation
+
+- Bundling `swcpack`
+
+- Minification
+
+- Transforming with WebAssembly
+
+- Usage inside webpack `swc-loader`
+
+- Improving Jest performance `@swc/jest`
+
+- Custom Plugins
+
+</Steps>
+
+---
+
 # Conclusion
 
 ## ⚡ SWC is faster than Babel
@@ -201,17 +232,10 @@ import ImageCp from "./components/ImageCp";
 
 # Thank you!
 
-<Box color="white">
-  <p
-    style={{
-      color: "white",
-    }}
-  >
-    <a href="https://twitter.com/apsyadiraa" color>
-      https://twitter.com/apsyadiraa
-    </a>
-  </p>
-  <p>
-    <a href="https://github.com/revell29">https://github.com/revell29</a>
-  </p>
-</Box>
+- <code>https://twitter.com/apsyadiraa</code>
+
+- <code>
+    https://dira.notion.site/SWC-VS-Babel-949fafd82177434d901f3fff89423fa8
+  </code>
+
+- <code>https://github.com/revell29</code>
